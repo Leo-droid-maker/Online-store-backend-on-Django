@@ -31,7 +31,7 @@ def login(request):
             return HttpResponseRedirect(reverse('main'))
 
     content = {
-        'title': 'вход',
+        'title': 'enter',
         'login_form': login_form,
         'next': next
     }
@@ -58,7 +58,7 @@ def register(request):
         register_form = ShopUserRegisterForm()
 
     content = {
-        'title': 'регистрация',
+        'title': 'registration',
         'form': register_form
     }
 
@@ -75,7 +75,7 @@ def edit(request):
         edit_form = ShopUserEditForm(instance=request.user)
 
     content = {
-        'title': 'изменить позьзователя',
+        'title': 'change user',
         'edit_form': edit_form
     }
 
@@ -85,9 +85,9 @@ def edit(request):
 def send_verify_email(user):
     verify_link = reverse('auth:verify', args=[user.email, user.activation_key])
     print(verify_link)
-    subject = f'Подтверждение учетной записи {user.email}'
+    subject = f'verification {user.email}'
 
-    message = f'Ссылка для активации: {settings.DOMAIN_NAME}{verify_link}'
+    message = f'activation link: {settings.DOMAIN_NAME}{verify_link}'
 
     return send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email], fail_silently=True)
 

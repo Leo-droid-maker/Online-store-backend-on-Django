@@ -1,16 +1,15 @@
-# Мой личный пэт-проект. Верстка НЕ МОЯ, я просто прикручиваю Django. На данном этапе подключены основные компоненты:
+My personal pet project. The layout is NOT MINE, I just attach Django. At this stage, the main components are connected:
 
-# Модели пользователей, категорий товаров, товаров.
-# Аутентификация и регистрация пользователей
-# Корзина
-# Собственная админка
-# Пагинация в разделе категорий товаров в админке
-# CBV (частично)
+Models of users, product categories, products.
+Authentication and registration of users
+Cart
+Own admin panel
+Pagination in the product categories section in the admin panel
+CBV (partially)
 
+In the future, the following will be added:
 
-# В будущем будут добавлены: 
-
-# Отправка электронной почты при регистрации (подписке)
-# Регистрация через социальные сети
-# Кеширование, тестирование
-# REST API
+Sending email upon registration (subscription)
+Registration via social networks
+Caching, testing
+REST API

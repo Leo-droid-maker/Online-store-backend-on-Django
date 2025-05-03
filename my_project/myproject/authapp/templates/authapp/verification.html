@@ -2,16 +2,16 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        <h3>Поздравляем!</h3>
-        <p>Пользователь {{ user.username }} был успешно активирован</p>
+        <h3>Congrats!</h3>
+        <p>User {{ user.username }} is activated</p>
     {% else %}
-        <h3>Увы!</h3>
-        <p>Активация не выполнена</p>
+        <h3>Oops!</h3>
+        <p>Activation was not completed</p>
     {% endif %}
 
     <button class="btn btn-link form-control">
         <a href="{% url 'main' %}">
-            на главную
+            Main
         </a>
     </button>
 {% endblock %}

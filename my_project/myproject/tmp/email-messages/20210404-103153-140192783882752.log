@@ -9,5 +9,5 @@ To: django45@django.com
 Date: Sun, 04 Apr 2021 10:31:53 -0000
 Message-ID: <161753231383.13072.844396129947766246@leo-PC>
 
-Ссылка для активации: http://localhost:8000/auth/verify/django45@django.com/7cd9f11e90cc56849bc8e8247fe225c878e70795/
+Activation link: http://localhost:8000/auth/verify/django45@django.com/7cd9f11e90cc56849bc8e8247fe225c878e70795/
 -------------------------------------------------------------------------------

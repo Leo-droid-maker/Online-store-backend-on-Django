@@ -30,13 +30,13 @@ class ShopUserRegisterForm(UserCreationForm):
     def clean_age(self):
         data = self.cleaned_data['age']
         if data < 18:
-            raise forms.ValidationError('Ваш возраст меньше 18 лет')
+            raise forms.ValidationError('You are under 18 years old')
         return data
 
     # def clean_email(self):
     #     data = self.cleaned_data['email']
     #     if data in ShopUser.objects.filter(email=data).exists():
-    #         raise forms.ValidationError('такой email существует')
+    #         raise forms.ValidationError('such email exists')
     #     return data
 
     def save(self, commit=True):
@@ -64,6 +64,6 @@ class ShopUserEditForm(UserChangeForm):
     def clean_age(self):
         data = self.cleaned_data['age']
         if data < 18:
-            raise forms.ValidationError('Ваш возраст меньше 18 лет')
+            raise forms.ValidationError('You are under 18 years old')
         return data
 
